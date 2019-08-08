@@ -5,14 +5,29 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $.getJSON('names.json',function(data){
+            console.log('success');
+            $.each(data.employees,function(i,emp){
+                $('ul').append('<li>'+emp.firstName+' '+emp.lastName+'</li>');
+            });
+        }).error(function(){
+            console.log('error');
+        });
+    });
+</script>
+
 <body>
 
 <h2 style="text-align:center">User Profile Card</h2>
-
-<script>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
    
-    var pr = import("file:///home/darren/digital-business-cards.json");
-    console.log(pr)
+    $.getJSON("https://github.com/darrenpierre90/digital-business-cards/blob/master/info.json", function(data) {
+        console.log(data)
+    })
 </script>
 
 <div class="card">
