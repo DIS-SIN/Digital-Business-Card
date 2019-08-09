@@ -1,1 +1,7 @@
-blah
+{
+    "first_name":"Jessica",
+    "last_name":"Pierre",
+    "role":"CEO of Savae Inc",
+    "image_header":"profile.jpeg"
+    
+  }

@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script> 
+<script type="text/javascript" src="utils.js"></script> 
 
 
 
@@ -23,24 +23,20 @@
   </div>
   <p><button>Contact</button></p>
 </div>
-<script >
-  var element = document.getElementById("id01");
-element.innerHTML = "New Heading";
 
-</script>
 
 <script type="text/javascript">
   $(function(){
-
       console.log("URL:"+document.URL)
-      $.getJSON('info.json',function(data){
-          console.log(data);
+      rootpath="people/"
+      path=rootpath+getParams().path+'/'
+      file=path + 'info.json'
+      console.log(path)
+      $.getJSON(file,function(data){
           document.getElementById('name').innerHTML=data.first_name + '  '+ data.last_name
           document.getElementById('title').innerHTML=data.role
-          document.getElementById('profile').setAttribute("src", data.image_header)
+          document.getElementById('profile').setAttribute("src", path+data.image_header)
           
-      }).error(function(){
-          console.log('error');
       });
   });
 </script>
