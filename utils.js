@@ -42,3 +42,15 @@ function myFunction() {
     
 
 }
+
+
+function generateQRcode() {
+    firstUrl="http://api.qrserver.com/v1/create-qr-code/?data="
+    secondUrl="&size=100x100"
+    url=document.getElementById("url").innerHTML 
+    document.getElementById('qr').setAttribute("src",firstUrl+url+secondUrl)
+
+
+    
+
+}
