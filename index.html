@@ -2,38 +2,18 @@
 <html>
 <head>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-<script type="text/javascript">
-    $(function(){
-        $.getJSON('names.json',function(data){
-            console.log('success');
-            $.each(data.employees,function(i,emp){
-                $('ul').append('<li>'+emp.firstName+' '+emp.lastName+'</li>');
-            });
-        }).error(function(){
-            console.log('error');
-        });
-    });
-</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script> 
 
-<body>
 
-<h2 style="text-align:center">User Profile Card</h2>
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-<script type="text/javascript">
-   
-    $.getJSON("https://github.com/darrenpierre90/digital-business-cards/blob/master/info.json", function(data) {
-        console.log(data)
-    })
-</script>
 
-<div class="card">
-  <img src="https://www.corporateheadshotslondon.com/wp-content/uploads/2015/03/Studio-headshots-London.jpg" alt="John" style="width:100%">
-  <h1>John Doe</h1>
-  <p class="title">CEO & Founder, Example</p>
+<div class="card" >
+  <img id='profile' alt="John" style="width:100%">
+  <h1 id="name">John Doe</h1>
+  <p class="title" id='title'>CEO & Founder, Example</p>
   <p>Harvard University</p>
   <div style="margin: 24px 0;">
     <a href="#"><i class="fa fa-dribbble"></i></a> 
@@ -43,6 +23,27 @@
   </div>
   <p><button>Contact</button></p>
 </div>
+<script >
+  var element = document.getElementById("id01");
+element.innerHTML = "New Heading";
+
+</script>
+
+<script type="text/javascript">
+  $(function(){
+
+      console.log("URL:"+document.URL)
+      $.getJSON('info.json',function(data){
+          console.log(data);
+          document.getElementById('name').innerHTML=data.first_name + '  '+ data.last_name
+          document.getElementById('title').innerHTML=data.role
+          document.getElementById('profile').setAttribute("src", data.image_header)
+          
+      }).error(function(){
+          console.log('error');
+      });
+  });
+</script>
 
 </body>
 </html>
