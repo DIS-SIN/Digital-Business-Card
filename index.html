@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css"/>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="utils.js"></script>    
 </head>
 <script type="text/javascript" src="utils.js"></script> 
 
@@ -14,12 +21,16 @@
   <img id='profile' alt="John" style="width:100%">
   <h1 id="name"></h1>
   <p class="title" id='title'></p>
-  <p id="company"></p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-  </div>
-  <p><button>Contact</button></p>
+  
+ 
+ 
+<div class="social-icons">
+    <a href="#"><i class="fa fa-envelope"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a> 
+    <a href="#"><i class="fa fa-linkedin"></i></a> 
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+</div>
+    <p><button>Digital Academy / Academie Du Numerique</button></p>
 </div>
 
 
@@ -34,6 +45,11 @@
           document.getElementById('name').innerHTML=data.first_name + '  '+ data.last_name
           document.getElementById('title').innerHTML=data.role
           document.getElementById('profile').setAttribute("src", path+data.image_header)
+          var welcomeMsg="<h1 class='toastText'>Welcome to Digital Academy!</h1>"
+          M.toast({html: welcomeMsg,displayLength:5000,classes: 'rounded'})
+          var statement='<h5>Our mission is teaching public servants the digital skills, approaches & mindsets needed in today’s digital age.</h5>'
+          M.toast({html: statement,displayLength:9000,classes: 'rounded'})
+
           
       });
   });
