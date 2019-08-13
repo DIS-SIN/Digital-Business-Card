@@ -1,7 +1,10 @@
 {
     "first_name":"James",
     "last_name":"Bond",
-    "role":"CEO of Savae Inc",
-    "image_header":"profile.jpeg"
-    
+    "role":"Secret Spy",
+    "profile_pic":"profile.jpeg",
+    "email":"jamesbond@gmail.com",
+    "linkedin":"https://ca.linkedin.com/company/canada-school-of-public-service",
+    "twitter":"https://twitter.com/digiacademycan",
+    "github":"https://github.com/DIS-SIN"
   }
