@@ -37,10 +37,7 @@
           document.getElementById('name').innerHTML=data.first_name + '  '+ data.last_name
           document.getElementById('title').innerHTML=data.role
           document.getElementById('profile_pic').setAttribute("src", path+data.profile_pic)
-          var welcomeMsg="<h1 class='toastText'>Welcome to Digital Academy!</h1>"
-          M.toast({html: welcomeMsg,displayLength:5000,classes: 'rounded'})
-          var statement='<h5>Our mission is teaching public servants the digital skills, approaches & mindsets needed in today’s digital age.</h5>'
-          M.toast({html: statement,displayLength:9000,classes: 'rounded'})
+          
       });
   });
 </script>
