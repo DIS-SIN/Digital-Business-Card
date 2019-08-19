@@ -27,21 +27,6 @@ function getParams() {
     return params;
 }
 
-function myFunction() {
-    var elements = document.getElementById("myForm").elements;
-    console.log(elements)
-    var obj ={};
-    for(var i = 0 ; i < elements.length ; i++){
-        var item = elements.item(i);
-        obj[item.name] = item.value;
-    }
-
-    document.getElementById("name").innerHTML = JSON.stringify(obj);
-
-
-    
-
-}
 
 
 function generateQRcode() {
