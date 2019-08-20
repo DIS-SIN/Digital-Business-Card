@@ -1,6 +1,6 @@
-<div class="row">
+<div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-third">
-  <div class="card">
+  <div class="card w3-card w3-container">
     <img alt="Jane" src="./python/pics/Amanda Bernardo.jpg">
     <h1>Amanda  Bernardo</h1>
     <p class="title">Communities and Engagement Manager</p>
@@ -20,7 +20,7 @@
     </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
   </div>
 </div><div class="w3-third">
-  <div class="card">
+  <div class="card w3-card w3-container">
     <img alt="Jane" src="./python/pics/Tom Camps.jpg">
     <h1>Tom Camps</h1>
     <p class="title">Entrepreneur-in-residence</p>
@@ -40,7 +40,7 @@
     </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
   </div>
 </div><div class="w3-third">
-  <div class="card">
+  <div class="card w3-card w3-container">
     <img alt="Jane" src="./python/pics/Louise Cote.jpg">
     <h1>Louise  Côté</h1>
     <p class="title">Product Owner, Practical Experience</p>
@@ -60,9 +60,9 @@
     </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
   </div>
 </div></div>
-<div class="row">
+<div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-third">
-  <div class="card">
+  <div class="card w3-card w3-container">
     <img alt="Jane" src="https://pbs.twimg.com/profile_images/1083069803236073472/oJzQVirc_400x400.jpg">
     <h1>Isa David</h1>
     <p class="title">Learning Specialist</p>
@@ -82,7 +82,7 @@
     </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
   </div>
 </div><div class="w3-third">
-  <div class="card">
+  <div class="card w3-card w3-container">
     <img alt="Jane" src="./python/pics/Liz McKeown.jpg">
     <h1>Liz McKeown</h1>
     <p class="title">Faculty</p>

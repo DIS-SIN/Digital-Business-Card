@@ -1,14 +1,10 @@
 
-
-
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+.w3-third{
+  float: left;
+  width: 33.3%;
+  margin-bottom: 169px;
+  
 }
-
 
 
 .card {
@@ -22,6 +18,7 @@
 
 }
 
+
 img {
   width: 100%;
   height: 100%;
@@ -33,10 +30,6 @@ img {
   color: grey;
  
 }
-
-
-
-
 .contact {
   border: none;
   outline: 0;
@@ -62,11 +55,7 @@ i {
   color:#3F2A56;
   margin: auto
 }
-.center-div
-{
-     margin: 0 auto;
-     width: 100px; 
-}
+
 
 
 

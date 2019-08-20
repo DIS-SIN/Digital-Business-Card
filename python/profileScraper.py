@@ -71,7 +71,7 @@ def createProfilecard(firstName,lastName,jobTitle,number,email,twitter,linkedin,
         fileNames=os.listdir('./pics')
         log.info(f"Creating Profile card for {firstName} {lastName}")
         with div(cls='w3-third') as d:
-            with div(cls="card"):
+            with div(cls="card w3-card w3-container"):
                 img(src=findPersonImage(firstName,lastName,fileNames) ,alt="Jane" )
                 
                 name= firstName + ' '+ lastName
@@ -130,14 +130,14 @@ def createSocialIcons(number,email,twitter,linkedin,github):
 def createMeetTheTeamPage():
     data = pd.read_csv('Corresponding details - Sheet1.csv' ).fillna('') 
     with open('meetTheTeamOutput.txt','w+') as f:
-        f.write('<div class="row">\n')
+        f.write('<div class="w3-row-padding w3-center w3-margin-top">\n')
         for index, row in data.iterrows():
                 createInfoJson(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
                 log.info(f'Starting to create Profile cards:')
                 a=createProfilecard(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
                 if((index+3) % 3==0 and index!=0):
                         f.write('</div>\n')
-                        f.write('<div class="row">\n')
+                        f.write('<div class="w3-row-padding w3-center w3-margin-top">\n')
                 f.write(str(a))
                 
 

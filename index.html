@@ -34,7 +34,7 @@
   $(function(){
       console.log("URL:"+document.URL)
       rootpath="people//"
-      path=rootpath+getParams().path+'/'
+      path=rootpath+getParams().person+'/'
       file=path + 'info.json'
       console.log(path)
       $.getJSON(file,function(data){
