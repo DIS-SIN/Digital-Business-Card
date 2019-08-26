@@ -66,12 +66,22 @@ def downloadQRCode(data,directory):
     else:
         log.error(f"Failed to download QR code for following data: {data} for this directory:{directory}")
 
+def createQRcodes():
+        data = pd.read_csv('Corresponding details - Sheet1.csv' ).fillna('') 
+        with open('meetTheTeamOutput.txt','w+') as f:
+                f.write('<div class="w3-row-padding w3-center w3-margin-top">\n')
+        for index, row in data.iterrows():
+                urlbase='https://darrenpierre90.github.io/digital-business-cards/?'
+                fullUrl=urlbase+('person='+row[0].strip())
+                log.info(f'Creating QR code for this url:{fullUrl} for this {row[0]}')
+                downloadQRCode(fullUrl,createPersonDirectory(row[0],row[2]) +row[0]+'.png')
+
 def createProfilecard(firstName,lastName,jobTitle,number,email,twitter,linkedin,github):
         import os 
         fileNames=os.listdir('./pics')
         log.info(f"Creating Profile card for {firstName} {lastName}")
-        with div(cls='w3-third') as d:
-            with div(cls="card w3-card w3-container"):
+        
+        with div(cls="card") as d:
                 img(src=findPersonImage(firstName,lastName,fileNames) ,alt="Jane" )
                 
                 name= firstName + ' '+ lastName
@@ -130,14 +140,14 @@ def createSocialIcons(number,email,twitter,linkedin,github):
 def createMeetTheTeamPage():
     data = pd.read_csv('Corresponding details - Sheet1.csv' ).fillna('') 
     with open('meetTheTeamOutput.txt','w+') as f:
-        f.write('<div class="w3-row-padding w3-center w3-margin-top">\n')
+        f.write('<div class="container">\n')
         for index, row in data.iterrows():
                 createInfoJson(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
                 log.info(f'Starting to create Profile cards:')
                 a=createProfilecard(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
                 if((index+3) % 3==0 and index!=0):
                         f.write('</div>\n')
-                        f.write('<div class="w3-row-padding w3-center w3-margin-top">\n')
+                        f.write('<div class="container">\n')
                 f.write(str(a))
                 
 

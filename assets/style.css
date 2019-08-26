@@ -55,3 +55,8 @@ i {
      width: 100px; 
 }
 
+
+.contact:hover {
+  background-color: #555;
+}
+
