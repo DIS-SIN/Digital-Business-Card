@@ -3,21 +3,23 @@
 .container{
   display: flex;
   flex-wrap:wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content : flex-start
+  justify-content: space-around;
 
+    
 }
 
 @media screen and (max-width: 650px) {
-  .container {
-    width: 100%;
-    display: block;
+  .container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    
   }
 }
 
 
 .card {
+ 
   box-shadow: 0 4px 8px 0 rgba(153, 32, 32, 0.2);
   max-width: 300px;
   margin: auto;
@@ -27,10 +29,11 @@
   align-self: flex-start ;
   margin: 0.2% ;  
   
-
+ 
  
 
 }
+
 
 img {
   width: 100%;
@@ -78,6 +81,8 @@ i {
 }
 
 
+
+
 .w3-theme-l5 {color:#000 !important; background-color:#f0f0f0 !important}
 .w3-theme-l4 {color:#000 !important; background-color:#cccccc !important}
 .w3-theme-l3 {color:#fff !important; background-color:#999999 !important}
@@ -99,4 +104,4 @@ i {
 
 .w3-hover-theme:hover {color:#fff !important; background-color:#000000 !important}
 .w3-hover-text-theme:hover {color:#000000 !important}
-.w3-hover-border-theme:hover {border-color:#000000 !important}
+.w3-hover-border-theme:hover {border-color:#000000 !important\

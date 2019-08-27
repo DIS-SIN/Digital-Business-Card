@@ -74,7 +74,7 @@ def createQRcodes():
                 urlbase='https://darrenpierre90.github.io/digital-business-cards/?'
                 fullUrl=urlbase+('person='+row[0].strip())
                 log.info(f'Creating QR code for this url:{fullUrl} for this {row[0]}')
-                downloadQRCode(fullUrl,createPersonDirectory(row[0],row[2]) +row[0]+'.png')
+                downloadQRCode(fullUrl,createPersonDirectory(row[0],row[2]) +row[0]+'QR.png')
 
 def createProfilecard(firstName,lastName,jobTitle,number,email,twitter,linkedin,github):
         import os 
@@ -139,16 +139,14 @@ def createSocialIcons(number,email,twitter,linkedin,github):
         return d      
 def createMeetTheTeamPage():
     data = pd.read_csv('Corresponding details - Sheet1.csv' ).fillna('') 
-    with open('meetTheTeamOutput.txt','w+') as f:
+    with open('meetTheTeamOutput.txt','w') as f:
         f.write('<div class="container">\n')
         for index, row in data.iterrows():
                 createInfoJson(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
                 log.info(f'Starting to create Profile cards:')
                 a=createProfilecard(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
-                if((index+3) % 3==0 and index!=0):
-                        f.write('</div>\n')
-                        f.write('<div class="container">\n')
                 f.write(str(a))
+        f.write('</div>\n')
 def email():
         import yagmail
         yag = yagmail.SMTP('dpapplication90@gmail.com','Basketball77')
