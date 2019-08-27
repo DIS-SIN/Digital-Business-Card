@@ -126,10 +126,10 @@ def createSocialIcons(number,email,twitter,linkedin,github):
         with a(href=number):
                 i(cls="fa fa-phone-square")
 
-        if(twitter or not(twitter.isnull())):    
+        if(twitter ):    
                 with a(href=twitter):
                         i(cls="fa fa-twitter")
-        if(linkedin or not(linkedin.isnull())):         
+        if(linkedin):         
                 with a(href=linkedin):
                         i(cls="fa fa-linkedin")
         if(github):         
@@ -150,9 +150,9 @@ def createMeetTheTeamPage():
                         f.write('<div class="container">\n')
                 f.write(str(a))
 def email():
-    import yagmail
-    yag = yagmail.SMTP('dpapplication90@gmail.com','Basketball77')
-    yag.send(to='d-pierre90@hotmail.com',subject='hi',contents='hihifdfd')
+        import yagmail
+        yag = yagmail.SMTP('dpapplication90@gmail.com','Basketball77')
+        yag.send(to='d-pierre90@hotmail.com',subject='hi',contents='hihifdfd')
 
 
 createMeetTheTeamPage()
