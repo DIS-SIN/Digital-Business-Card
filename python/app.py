@@ -68,8 +68,7 @@ def downloadQRCode(data,directory):
 
 def createQRcodes():
         data = pd.read_csv('Corresponding details - Sheet1.csv' ).fillna('') 
-        with open('meetTheTeamOutput.txt','w+') as f:
-                f.write('<div class="w3-row-padding w3-center w3-margin-top">\n')
+        
         for index, row in data.iterrows():
                 urlbase='https://darrenpierre90.github.io/digital-business-cards/?'
                 fullUrl=urlbase+('person='+row[0].strip())
@@ -139,7 +138,7 @@ def createSocialIcons(number,email,twitter,linkedin,github):
         return d      
 def createMeetTheTeamPage():
     data = pd.read_csv('Corresponding details - Sheet1.csv' ).fillna('') 
-    with open('meetTheTeamOutput.txt','w') as f:
+    with open('./meetTheTeamOutput.txt','w') as f:
         f.write('<div class="container">\n')
         for index, row in data.iterrows():
                 createInfoJson(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
