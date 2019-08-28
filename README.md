@@ -1,3 +1,3 @@
-https://darrenpierre90.github.io/digital-business-cards/
+https://darrenpierre90.github.io/digital-business-cards//meetTheTeam.html
 
-https://darrenpierre90.github.io/digital-business-cards/?path=darrenpierre
+https://darrenpierre90.github.io/digital-business-cards/?person=Fareeha
