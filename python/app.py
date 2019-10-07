@@ -146,11 +146,16 @@ def createMeetTheTeamPage():
                 a=createProfilecard(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
                 f.write(str(a))
         f.write('</div>\n')
-def email():
+def email(to,subject,body,html,attachment):
         import yagmail
         yag = yagmail.SMTP('dpapplication90@gmail.com','Basketball77')
         yag.send(to='d-pierre90@hotmail.com',subject='hi',contents='hihifdfd')
+        yag.send(to = to, subject = subject, contents = [body, html, attachment])
 
 
-createMeetTheTeamPage()
-createQRcodes()
+def main():
+        createMeetTheTeamPage()
+        createQRcodes()
+
+if __name__ == '__main__':
+        main()
