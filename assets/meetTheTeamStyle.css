@@ -16,7 +16,9 @@
     
   }
 }
-
+h1{
+  font-size: 32px;
+}
 
 .card {
  
@@ -41,6 +43,7 @@ img {
 
 .title {
   color: grey;
+ 
  
 }
 .contact {

@@ -5,6 +5,7 @@ import pandas as pd
 import dominate
 from dominate.tags import *
 from dominate.util import raw
+import sys
 
 import logging as log 
 log.basicConfig(format='%(asctime)s - %(message)s', level=log.INFO)
@@ -66,8 +67,8 @@ def downloadQRCode(data,directory):
     else:
         log.error(f"Failed to download QR code for following data: {data} for this directory:{directory}")
 
-def createQRcodes():
-        data = pd.read_csv('Corresponding details - Sheet1.csv' ).fillna('') 
+def createQRcodes(dataFile='Corresponding details - Sheet1.csv'):
+        data = pd.read_csv(dataFile).fillna('') 
         
         for index, row in data.iterrows():
                 urlbase='https://darrenpierre90.github.io/digital-business-cards/?'
@@ -75,9 +76,9 @@ def createQRcodes():
                 log.info(f'Creating QR code for this url:{fullUrl} for this {row[0]}')
                 downloadQRCode(fullUrl,createPersonDirectory(row[0],row[2]) +row[0]+'QR.png')
 
-def createProfilecard(firstName,lastName,jobTitle,number,email,twitter,linkedin,github):
+def createProfilecard(firstName,lastName,jobTitle,number,email,twitter,linkedin,github,dirOfPics='./pics'):
         import os 
-        fileNames=os.listdir('./pics')
+        fileNames=os.listdir(dirOfPics)
         log.info(f"Creating Profile card for {firstName} {lastName}")
         
         with div(cls="card") as d:
@@ -136,8 +137,8 @@ def createSocialIcons(number,email,twitter,linkedin,github):
                         i(cls="fa fa-github-square")
         
         return d      
-def createMeetTheTeamPage():
-    data = pd.read_csv('Corresponding details - Sheet1.csv' ).fillna('') 
+def createMeetTheTeamPage(dataDetails='Corresponding details - Sheet1.csv',):
+    data = pd.read_csv(dataDetails).fillna('') 
     with open('./meetTheTeamOutput.txt','w') as f:
         f.write('<div class="container">\n')
         for index, row in data.iterrows():
@@ -154,8 +155,19 @@ def email(to,subject,body,html,attachment):
 
 
 def main():
-        createMeetTheTeamPage()
-        createQRcodes()
+        dataFile=''
+        picsDirectory=''
+        for index in range(len(sys.argv)):
+                if sys.argv[index] =='-f':
+                        dataFile=sys.argv[index+1]
+
+                elif sys.argv[index] =='-p':
+                        picsDirectory=sys.argv[index+1]
+
+
+
+        createMeetTheTeamPage(dataFile)
+        createQRcodes(dataFile)
 
 if __name__ == '__main__':
         main()
