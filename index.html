@@ -46,17 +46,17 @@
           document.getElementById('github').setAttribute("href", data.github)
           document.getElementById('twitter').setAttribute("href", data.twitter)
           document.getElementById('linkedin').setAttribute("href", data.linkedin)
-          if(data.github===''){
+          if(data.github.length == 0){
             document.getElementById('github').remove()  
 
           }
 
-          if(data.twitter===''){
+          if(data.twitter.length == 0){
             document.getElementById('twitter').remove()
           }
 
 
-          if(data.linkedin===''){
+          if(data.linkedin.length == 0){
             document.getElementById('linkedin').remove()
           }
           
