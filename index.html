@@ -26,7 +26,7 @@
     <a href="https://github.com/DIS-SIN" target="_blank" id='github'><i class="fa fa-github-square w3-hover-shadow" aria-label="user github"></i></a> 
 </div>
     <br>
-    <a class='contact w3-hover-shadow' href="https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx" target="_blank">Digital Academy / Academie Du Numerique</a>
+    <a class='contact w3-hover-shadow' href="https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx" target="_blank">Digital Academy</a>
 </div>
 
 
@@ -38,6 +38,7 @@
       file=path + 'info.json'
       console.log(path)
       $.getJSON(file,function(data){
+          console.log(data)
           document.getElementById('name').innerHTML=data.first_name + '  '+ data.last_name
           document.getElementById('title').innerHTML=data.role
           document.getElementById('profile_pic').setAttribute("src", data.profile_pic)
@@ -49,6 +50,9 @@
           if(data.github.length == 0){
             document.getElementById('github').remove()  
 
+          }
+          else{
+            console.log("not render")
           }
 
           if(data.twitter.length == 0){
