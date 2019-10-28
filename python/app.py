@@ -71,7 +71,7 @@ def createQRcodes(dataFile='Corresponding details - Sheet1.csv'):
         data = pd.read_csv(dataFile).fillna('') 
         
         for index, row in data.iterrows():
-                urlbase='https://darrenpierre90.github.io/digital-business-cards/?'
+                urlbase='https://dis-sin.github.io/Digital-Business-Card/index.html?'
                 fullUrl=urlbase+('person='+row[0].strip())
                 log.info(f'Creating QR code for this url:{fullUrl} for this {row[0]}')
                 downloadQRCode(fullUrl,createPersonDirectory(row[0],row[2]) +row[0]+'QR.png')
