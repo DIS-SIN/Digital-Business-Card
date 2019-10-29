@@ -58,7 +58,7 @@ def createInfoJson(first_name,last_name,role,phone_number,email,twitter,linkedin
 def downloadQRCode(data,directory):
     import requests
     url = "http://api.qrserver.com/v1/create-qr-code/?data="
-    url2='&size=200x200&color=255-255-255&bgcolor=3F2A56'
+    url2='&size=200x200&color=38-55-75&bgcolor=3F2A56'
     log.info('URL:'+url+data+url2)
     response = requests.get(url+data+url2)
     if response.status_code == 200:
@@ -82,9 +82,8 @@ def createProfilecard(firstName,lastName,jobTitle,number,email,twitter,linkedin,
         log.info(f"Creating Profile card for {firstName} {lastName}")
         
         with div(cls="card") as d:
-                img(src=findPersonImage(firstName,lastName,fileNames) ,alt="Jane" )
-                
                 name= firstName + ' '+ lastName
+                img(src=findPersonImage(firstName,lastName,fileNames) ,alt="Image of "+ name )
                 h1(name)
                 p(jobTitle,cls='title')
                 log.info(f"Creating Social icons card for {firstName} {lastName}")
@@ -147,11 +146,6 @@ def createMeetTheTeamPage(dataDetails='Corresponding details - Sheet1.csv',):
                 a=createProfilecard(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
                 f.write(str(a))
         f.write('</div>\n')
-def email(to,subject,body,html,attachment):
-        import yagmail
-        yag = yagmail.SMTP('dpapplication90@gmail.com','Basketball77')
-        yag.send(to='d-pierre90@hotmail.com',subject='hi',contents='hihifdfd')
-        yag.send(to = to, subject = subject, contents = [body, html, attachment])
 
 
 def main():
@@ -163,11 +157,10 @@ def main():
 
                 elif sys.argv[index] =='-p':
                         picsDirectory=sys.argv[index+1]
-
-
-
         createMeetTheTeamPage(dataFile)
-        createQRcodes(dataFile)
+
+
+
 
 if __name__ == '__main__':
         main()
