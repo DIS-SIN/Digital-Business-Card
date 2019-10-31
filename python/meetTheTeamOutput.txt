@@ -1,524 +1,524 @@
 <div class="container">
 <div class="card">
-  <img alt="Image of Amanda  Bernardo" src="./python/pics/Amanda .jpg">
-  <h1>Amanda  Bernardo</h1>
+  <img alt="Image of Amanda Bernardo" src="./python/pics/Amanda .jpg">
+  <h1>Amanda Bernardo</h1>
   <p class="title">Communities and Engagement Manager</p>
   <div class="social-icons">
-    <a href="mailto:amanda.bernardo@canada.ca">
+    <a aria-label="Link to Amanda Bernardo's Email" href="mailto:amanda.bernardo@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:343-996-3743">
+    <a aria-label="Link to Amanda Bernardo's Phone Number" href="tel:343-996-3743">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/amandabernardo">
+    <a aria-label="Link to Amanda Bernardo's twitter account" href="https://twitter.com/amandabernardo">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/amandabernardo/">
+    <a aria-label="Link to Amanda Bernardo's linkedin account" href="https://www.linkedin.com/in/amandabernardo/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
-  <img alt="Image of Anna  Wong" src="./python/pics/Anna .jpg">
-  <h1>Anna  Wong</h1>
+  <img alt="Image of Anna Wong" src="./python/pics/Anna .jpg">
+  <h1>Anna Wong</h1>
   <p class="title">Deputy Director</p>
   <div class="social-icons">
-    <a href="mailto:anna.wong@canada.ca">
+    <a aria-label="Link to Anna Wong's Email" href="mailto:anna.wong@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:613-790-3454">
+    <a aria-label="Link to Anna Wong's Phone Number" href="tel:613-790-3454">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/Anna_Wong10">
+    <a aria-label="Link to Anna Wong's twitter account" href="https://twitter.com/Anna_Wong10">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/anna-wong-15093a12">
+    <a aria-label="Link to Anna Wong's linkedin account" href="https://www.linkedin.com/in/anna-wong-15093a12">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Ashley Evans" src="https://pbs.twimg.com/profile_images/1083069803236073472/oJzQVirc_400x400.jpg">
   <h1>Ashley Evans</h1>
   <p class="title">Analyst</p>
   <div class="social-icons">
-    <a href="mailto:ashley.evans@canada.ca">
+    <a aria-label="Link to Ashley Evans's Email" href="mailto:ashley.evans@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:343-549-3207">
+    <a aria-label="Link to Ashley Evans's Phone Number" href="tel:343-549-3207">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/ashlevanss">
+    <a aria-label="Link to Ashley Evans's twitter account" href="https://twitter.com/ashlevanss">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/ashley-nd-evans/">
+    <a aria-label="Link to Ashley Evans's linkedin account" href="https://www.linkedin.com/in/ashley-nd-evans/">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a href="https://github.com/ashlevans">
+    <a aria-label="Link to Ashley Evans's github account" href="https://github.com/ashlevans">
       <i class="fa fa-github-square"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Aury Rukazana" src="./python/pics/Aury.jpg">
   <h1>Aury Rukazana</h1>
   <p class="title">Application Developer</p>
   <div class="social-icons">
-    <a href="mailto:aury.rukazana@canada.ca">
+    <a aria-label="Link to Aury Rukazana's Email" href="mailto:aury.rukazana@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:343-998-6818">
+    <a aria-label="Link to Aury Rukazana's Phone Number" href="tel:343-998-6818">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://www.linkedin.com/in/aury-rukazana-b397a8163/">
+    <a aria-label="Link to Aury Rukazana's linkedin account" href="https://www.linkedin.com/in/aury-rukazana-b397a8163/">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a href="https://github.com/rukaury">
+    <a aria-label="Link to Aury Rukazana's github account" href="https://github.com/rukaury">
       <i class="fa fa-github-square"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
-  <img alt="Image of Brian Enright" src="./python/pics/Brian.jpg">
+  <img alt="Image of Brian Enright" src="./python/pics/Brian-min.jpg">
   <h1>Brian Enright</h1>
   <p class="title">Director, Engagement and Partnerships</p>
   <div class="social-icons">
-    <a href="mailto:brian.enright@canada.ca">
+    <a aria-label="Link to Brian Enright's Email" href="mailto:brian.enright@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:">
+    <a aria-label="Link to Brian Enright's Phone Number" href="tel:">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/brianenright?lang=en">
+    <a aria-label="Link to Brian Enright's twitter account" href="https://twitter.com/brianenright?lang=en">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/brian-enright-664a0bb5/">
+    <a aria-label="Link to Brian Enright's linkedin account" href="https://www.linkedin.com/in/brian-enright-664a0bb5/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Elmina Iusifova" src="./python/pics/Elmina.jpg">
   <h1>Elmina Iusifova</h1>
   <p class="title">Application Designer </p>
   <div class="social-icons">
-    <a href="mailto:elmina.iusifova@canada.ca">
+    <a aria-label="Link to Elmina Iusifova's Email" href="mailto:elmina.iusifova@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:(613)295-1941">
+    <a aria-label="Link to Elmina Iusifova's Phone Number" href="tel:(613)295-1941">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://www.linkedin.com/in/elminaiusifova/">
+    <a aria-label="Link to Elmina Iusifova's linkedin account" href="https://www.linkedin.com/in/elminaiusifova/">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a href="https://github.com/ElminaIusifova">
+    <a aria-label="Link to Elmina Iusifova's github account" href="https://github.com/ElminaIusifova">
       <i class="fa fa-github-square"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Fareeha Sagheir" src="./python/pics/Fareeha Sagheir.jpg">
   <h1>Fareeha Sagheir</h1>
   <p class="title">Junior Analyst</p>
   <div class="social-icons">
-    <a href="mailto:fareeha.sagheir@canada.ca">
+    <a aria-label="Link to Fareeha Sagheir's Email" href="mailto:fareeha.sagheir@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:343-961-2855">
+    <a aria-label="Link to Fareeha Sagheir's Phone Number" href="tel:343-961-2855">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/Fsagheir">
+    <a aria-label="Link to Fareeha Sagheir's twitter account" href="https://twitter.com/Fsagheir">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/fareehasagheir/">
+    <a aria-label="Link to Fareeha Sagheir's linkedin account" href="https://www.linkedin.com/in/fareehasagheir/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
-  <img alt="Image of Genevieve Lemieux" src="./python/pics/Genevieve.jpg">
+  <img alt="Image of Genevieve Lemieux" src="./python/pics/Genevieve-min.jpg">
   <h1>Genevieve Lemieux</h1>
   <p class="title">Manager, User Experience and Design</p>
   <div class="social-icons">
-    <a href="mailto:genevieve.lemieux@canada.ca">
+    <a aria-label="Link to Genevieve Lemieux's Email" href="mailto:genevieve.lemieux@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:613-408-3815">
+    <a aria-label="Link to Genevieve Lemieux's Phone Number" href="tel:613-408-3815">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/LemieuxGen">
+    <a aria-label="Link to Genevieve Lemieux's twitter account" href="https://twitter.com/LemieuxGen">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/lemieuxgen/">
+    <a aria-label="Link to Genevieve Lemieux's linkedin account" href="https://www.linkedin.com/in/lemieuxgen/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Isa David" src="./python/pics/Isa.jpg">
   <h1>Isa David</h1>
   <p class="title">Learning Specialist</p>
   <div class="social-icons">
-    <a href="mailto:isa.david@canada.ca">
+    <a aria-label="Link to Isa David's Email" href="mailto:isa.david@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:418-446-1632">
+    <a aria-label="Link to Isa David's Phone Number" href="tel:418-446-1632">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/idavidcsps">
+    <a aria-label="Link to Isa David's twitter account" href="https://twitter.com/idavidcsps">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/isa-david-28259b32/">
+    <a aria-label="Link to Isa David's linkedin account" href="https://www.linkedin.com/in/isa-david-28259b32/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Janki Padaliya" src="./python/pics/Janki.jpg">
   <h1>Janki Padaliya</h1>
   <p class="title">UX Designer</p>
   <div class="social-icons">
-    <a href="mailto:janki.padaliya@canada.ca">
+    <a aria-label="Link to Janki Padaliya's Email" href="mailto:janki.padaliya@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:613-371-2770">
+    <a aria-label="Link to Janki Padaliya's Phone Number" href="tel:613-371-2770">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://www.linkedin.com/in/janki-padaliya/">
+    <a aria-label="Link to Janki Padaliya's linkedin account" href="https://www.linkedin.com/in/janki-padaliya/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Jocelyne Melanson" src="./python/pics/Jocelyne.jpg">
   <h1>Jocelyne Melanson</h1>
   <p class="title">Learning Advisor</p>
   <div class="social-icons">
-    <a href="mailto:jocelyne.melanson@canada.ca">
+    <a aria-label="Link to Jocelyne Melanson's Email" href="mailto:jocelyne.melanson@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:613-266-7630">
+    <a aria-label="Link to Jocelyne Melanson's Phone Number" href="tel:613-266-7630">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/jocelynemelanso">
+    <a aria-label="Link to Jocelyne Melanson's twitter account" href="https://twitter.com/jocelynemelanso">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/jocelyne-melanson-b13b7610">
+    <a aria-label="Link to Jocelyne Melanson's linkedin account" href="https://www.linkedin.com/in/jocelyne-melanson-b13b7610">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Kent Aitken" src="./python/pics/Kent.jpg">
   <h1>Kent Aitken</h1>
   <p class="title">Lead, Policy and Partnerships</p>
   <div class="social-icons">
-    <a href="mailto:kent.aitken@canada.ca">
+    <a aria-label="Link to Kent Aitken's Email" href="mailto:kent.aitken@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:613-608-2774">
+    <a aria-label="Link to Kent Aitken's Phone Number" href="tel:613-608-2774">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/kentdaitken">
+    <a aria-label="Link to Kent Aitken's twitter account" href="https://twitter.com/kentdaitken">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://ca.linkedin.com/in/kent-aitken-0a162827">
+    <a aria-label="Link to Kent Aitken's linkedin account" href="https://ca.linkedin.com/in/kent-aitken-0a162827">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a href="https://github.com/kentdaitken">
+    <a aria-label="Link to Kent Aitken's github account" href="https://github.com/kentdaitken">
       <i class="fa fa-github-square"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Kevin Gillespie" src="./python/pics/Kevin_Gillespie.jpg">
   <h1>Kevin Gillespie</h1>
   <p class="title">Manager, Digital Innovation Solutions</p>
   <div class="social-icons">
-    <a href="mailto:kevin.gillespie@canada.ca">
+    <a aria-label="Link to Kevin Gillespie's Email" href="mailto:kevin.gillespie@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:613-295-4326">
+    <a aria-label="Link to Kevin Gillespie's Phone Number" href="tel:613-295-4326">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/KevinGillespie8">
+    <a aria-label="Link to Kevin Gillespie's twitter account" href="https://twitter.com/KevinGillespie8">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/kevin-gillespie-476a1619">
+    <a aria-label="Link to Kevin Gillespie's linkedin account" href="https://www.linkedin.com/in/kevin-gillespie-476a1619">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a href="https://github.com/gillespiekevin7">
+    <a aria-label="Link to Kevin Gillespie's github account" href="https://github.com/gillespiekevin7">
       <i class="fa fa-github-square"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Kinga Petrovai" src="./python/pics/Kinga.jpg">
   <h1>Kinga Petrovai</h1>
   <p class="title">Evaluation Specialist </p>
   <div class="social-icons">
-    <a href="mailto:kinga.petrovai@canada.ca">
+    <a aria-label="Link to Kinga Petrovai's Email" href="mailto:kinga.petrovai@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:343-550-6453">
+    <a aria-label="Link to Kinga Petrovai's Phone Number" href="tel:343-550-6453">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/p_kinga">
+    <a aria-label="Link to Kinga Petrovai's twitter account" href="https://twitter.com/p_kinga">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/kinga-petrovai-phd-30b7a539/">
+    <a aria-label="Link to Kinga Petrovai's linkedin account" href="https://www.linkedin.com/in/kinga-petrovai-phd-30b7a539/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Kiran Khullar" src="./python/pics/Kiran.jpg">
   <h1>Kiran Khullar</h1>
   <p class="title">Free Agent, Policy and Partnerships Team</p>
   <div class="social-icons">
-    <a href="mailto:kiran.khullar2@canada.ca">
+    <a aria-label="Link to Kiran Khullar's Email" href="mailto:kiran.khullar2@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:780-243-7187">
+    <a aria-label="Link to Kiran Khullar's Phone Number" href="tel:780-243-7187">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/cdnkiran?lang=en">
+    <a aria-label="Link to Kiran Khullar's twitter account" href="https://twitter.com/cdnkiran?lang=en">
       <i class="fa fa-twitter"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
-  <img alt="Image of Ksenia  Cheinman" src="https://pbs.twimg.com/profile_images/1083069803236073472/oJzQVirc_400x400.jpg">
-  <h1>Ksenia  Cheinman</h1>
+  <img alt="Image of Ksenia Cheinman" src="./python/pics/Ksenia.jpg">
+  <h1>Ksenia Cheinman</h1>
   <p class="title">Learning Architect</p>
   <div class="social-icons">
-    <a href="mailto:ksenia.cheinman@canada.ca">
+    <a aria-label="Link to Ksenia Cheinman's Email" href="mailto:ksenia.cheinman@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:613-297-6770">
+    <a aria-label="Link to Ksenia Cheinman's Phone Number" href="tel:613-297-6770">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/altspaces">
+    <a aria-label="Link to Ksenia Cheinman's twitter account" href="https://twitter.com/altspaces">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/kseniacheinman/">
+    <a aria-label="Link to Ksenia Cheinman's linkedin account" href="https://www.linkedin.com/in/kseniacheinman/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
-  <img alt="Image of Liz McKeown" src="./python/pics/Liz.jpg">
+  <img alt="Image of Liz McKeown" src="./python/pics/Liz-min.jpg">
   <h1>Liz McKeown</h1>
   <p class="title">Faculty</p>
   <div class="social-icons">
-    <a href="mailto:liz.mckeown@canada.ca">
+    <a aria-label="Link to Liz McKeown's Email" href="mailto:liz.mckeown@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:613-889-0610">
+    <a aria-label="Link to Liz McKeown's Phone Number" href="tel:613-889-0610">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/LizMcKeown854">
+    <a aria-label="Link to Liz McKeown's twitter account" href="https://twitter.com/LizMcKeown854">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/liz-mckeown-75590318/">
+    <a aria-label="Link to Liz McKeown's linkedin account" href="https://www.linkedin.com/in/liz-mckeown-75590318/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
-  <img alt="Image of Louise  Côté" src="./python/pics/Louise Cote.jpg">
-  <h1>Louise  Côté</h1>
+  <img alt="Image of Louise Côté" src="./python/pics/Louise Cote.jpg">
+  <h1>Louise Côté</h1>
   <p class="title">Product Owner, Practical Experience</p>
   <div class="social-icons">
-    <a href="mailto:louise.cote@canada.ca">
+    <a aria-label="Link to Louise Côté's Email" href="mailto:louise.cote@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:819-664-1362">
+    <a aria-label="Link to Louise Côté's Phone Number" href="tel:819-664-1362">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/louisemcote">
+    <a aria-label="Link to Louise Côté's twitter account" href="https://twitter.com/louisemcote">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/louisecote/">
+    <a aria-label="Link to Louise Côté's linkedin account" href="https://www.linkedin.com/in/louisecote/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Mandy Hoyt" src="./python/pics/Mandy.jpg">
   <h1>Mandy Hoyt</h1>
   <p class="title">Product Owner, Foundations</p>
   <div class="social-icons">
-    <a href="mailto:mandy.hoyt@canada.ca">
+    <a aria-label="Link to Mandy Hoyt's Email" href="mailto:mandy.hoyt@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:506-447-1282">
+    <a aria-label="Link to Mandy Hoyt's Phone Number" href="tel:506-447-1282">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/HoytMandy">
+    <a aria-label="Link to Mandy Hoyt's twitter account" href="https://twitter.com/HoytMandy">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/mandy-hoyt/">
+    <a aria-label="Link to Mandy Hoyt's linkedin account" href="https://www.linkedin.com/in/mandy-hoyt/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
-  <img alt="Image of Marlene Roache" src="./python/pics/Marlene Roache.jpg">
+  <img alt="Image of Marlene Roache" src="./python/pics/Marlene Roache-min.jpg">
   <h1>Marlene Roache</h1>
   <p class="title">Product Owner, Learning Events</p>
   <div class="social-icons">
-    <a href="mailto:marlene.roache@canada.ca">
+    <a aria-label="Link to Marlene Roache's Email" href="mailto:marlene.roache@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:613-608-3128">
+    <a aria-label="Link to Marlene Roache's Phone Number" href="tel:613-608-3128">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/MarleneRoache">
+    <a aria-label="Link to Marlene Roache's twitter account" href="https://twitter.com/MarleneRoache">
       <i class="fa fa-twitter"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Miaolin Que" src="./python/pics/Miaolin.jpg">
   <h1>Miaolin Que</h1>
   <p class="title">Event and Communications Coordinator</p>
   <div class="social-icons">
-    <a href="mailto:miaolin.que@da-an.ca">
+    <a aria-label="Link to Miaolin Que's Email" href="mailto:miaolin.que@da-an.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:613-263-8677">
+    <a aria-label="Link to Miaolin Que's Phone Number" href="tel:613-263-8677">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://www.linkedin.com/in/miaolin-que-9a224314a/">
+    <a aria-label="Link to Miaolin Que's linkedin account" href="https://www.linkedin.com/in/miaolin-que-9a224314a/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Omar Nasr" src="./python/pics/Omar.jpg">
   <h1>Omar Nasr</h1>
   <p class="title">Full Stack Application Developer</p>
   <div class="social-icons">
-    <a href="mailto:omar.nasr@canada.ca">
+    <a aria-label="Link to Omar Nasr's Email" href="mailto:omar.nasr@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:343-549-2716">
+    <a aria-label="Link to Omar Nasr's Phone Number" href="tel:343-549-2716">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/thenextmusk">
+    <a aria-label="Link to Omar Nasr's twitter account" href="https://twitter.com/thenextmusk">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://ca.linkedin.com/in/gc-omar-nasr">
+    <a aria-label="Link to Omar Nasr's linkedin account" href="https://ca.linkedin.com/in/gc-omar-nasr">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a href="https://github.com/moro-code">
+    <a aria-label="Link to Omar Nasr's github account" href="https://github.com/moro-code">
       <i class="fa fa-github-square"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Qi Fu" src="./python/pics/Qi.jpg">
   <h1>Qi Fu</h1>
   <p class="title">UX Designer</p>
   <div class="social-icons">
-    <a href="mailto:vivian.qifu@canada.ca">
+    <a aria-label="Link to Qi Fu's Email" href="mailto:vivian.qifu@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:289-887-6308">
+    <a aria-label="Link to Qi Fu's Phone Number" href="tel:289-887-6308">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://www.linkedin.com/in/qivivianfu/">
+    <a aria-label="Link to Qi Fu's linkedin account" href="https://www.linkedin.com/in/qivivianfu/">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a href="https://www.vivianqifu.com/">
+    <a aria-label="Link to Qi Fu's github account" href="https://www.vivianqifu.com/">
       <i class="fa fa-github-square"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Rebecca Nava" src="./python/pics/Rebecca2.jpg">
   <h1>Rebecca Nava</h1>
   <p class="title">Free Agent | Busrides Learning Advisor</p>
   <div class="social-icons">
-    <a href="mailto:rebecca.nava@tbs-sct.gc.ca">
+    <a aria-label="Link to Rebecca Nava's Email" href="mailto:rebecca.nava@tbs-sct.gc.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:(343) 549-2872">
+    <a aria-label="Link to Rebecca Nava's Phone Number" href="tel:(343) 549-2872">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/hermit_media">
+    <a aria-label="Link to Rebecca Nava's twitter account" href="https://twitter.com/hermit_media">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/rnava/">
+    <a aria-label="Link to Rebecca Nava's linkedin account" href="https://www.linkedin.com/in/rnava/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
-  <img alt="Image of Sabrina Ahmad" src="./python/pics/Sabrina.jpg">
+  <img alt="Image of Sabrina Ahmad" src="./python/pics/Sabrina-min.jpg">
   <h1>Sabrina Ahmad</h1>
   <p class="title">Policy Analyst</p>
   <div class="social-icons">
-    <a href="mailto:sabrina.ahmad@canada.ca">
+    <a aria-label="Link to Sabrina Ahmad's Email" href="mailto:sabrina.ahmad@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:(613)-853-0327">
+    <a aria-label="Link to Sabrina Ahmad's Phone Number" href="tel:(613)-853-0327">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/sabrinaahmad_">
+    <a aria-label="Link to Sabrina Ahmad's twitter account" href="https://twitter.com/sabrinaahmad_">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/sabrinaahmad/">
+    <a aria-label="Link to Sabrina Ahmad's linkedin account" href="https://www.linkedin.com/in/sabrinaahmad/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Sinan Baltacioglu" src="./python/pics/Sinan Baltacioglu.png">
   <h1>Sinan Baltacioglu</h1>
   <p class="title">Senior Techinical Advisor, Digital Innovation Solutions</p>
   <div class="social-icons">
-    <a href="mailto:sinan.baltacioglu@canada.ca">
+    <a aria-label="Link to Sinan Baltacioglu's Email" href="mailto:sinan.baltacioglu@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:613-297-6817">
+    <a aria-label="Link to Sinan Baltacioglu's Phone Number" href="tel:613-297-6817">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/TheMightyWeasel">
+    <a aria-label="Link to Sinan Baltacioglu's twitter account" href="https://twitter.com/TheMightyWeasel">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/sinanbaltacioglu/">
+    <a aria-label="Link to Sinan Baltacioglu's linkedin account" href="https://www.linkedin.com/in/sinanbaltacioglu/">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a href="https://github.com/mightyweasel/">
+    <a aria-label="Link to Sinan Baltacioglu's github account" href="https://github.com/mightyweasel/">
       <i class="fa fa-github-square"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
-  <img alt="Image of Todd  Scanlan" src="https://pbs.twimg.com/profile_images/1083069803236073472/oJzQVirc_400x400.jpg">
-  <h1>Todd  Scanlan</h1>
+  <img alt="Image of Todd Scanlan" src="./python/pics/Todd-min.jpg">
+  <h1>Todd Scanlan</h1>
   <p class="title">Agile Coach</p>
   <div class="social-icons">
-    <a href="mailto:Todd.scanlan@canada.ca">
+    <a aria-label="Link to Todd Scanlan's Email" href="mailto:Todd.scanlan@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:819-744-0201">
+    <a aria-label="Link to Todd Scanlan's Phone Number" href="tel:819-744-0201">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/toddscanlan">
+    <a aria-label="Link to Todd Scanlan's twitter account" href="https://twitter.com/toddscanlan">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/toddscanlan/">
+    <a aria-label="Link to Todd Scanlan's linkedin account" href="https://www.linkedin.com/in/toddscanlan/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Tom Camps" src="./python/pics/Tom Camps.jpg">
   <h1>Tom Camps</h1>
   <p class="title">Entrepreneur-in-residence</p>
   <div class="social-icons">
-    <a href="mailto:thomas.camps@canada.ca">
+    <a aria-label="Link to Tom Camps's Email" href="mailto:thomas.camps@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:819.712.7803">
+    <a aria-label="Link to Tom Camps's Phone Number" href="tel:819.712.7803">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://twitter.com/TCamps">
+    <a aria-label="Link to Tom Camps's twitter account" href="https://twitter.com/TCamps">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="https://www.linkedin.com/in/tomcamps/">
+    <a aria-label="Link to Tom Camps's linkedin account" href="https://www.linkedin.com/in/tomcamps/">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div><div class="card">
   <img alt="Image of Zaiyaan Esoof" src="./python/pics/Zaiyaan Esoof.png">
   <h1>Zaiyaan Esoof</h1>
   <p class="title">Research Analyst &amp; Events Coordinator</p>
   <div class="social-icons">
-    <a href="mailto:zaiyaan.esoof@canada.ca">
+    <a aria-label="Link to Zaiyaan Esoof's Email" href="mailto:zaiyaan.esoof@canada.ca">
       <i class="fa fa-envelope"></i>
     </a>
-    <a href="tel:(613)252-9725">
+    <a aria-label="Link to Zaiyaan Esoof's Phone Number" href="tel:(613)252-9725">
       <i class="fa fa-phone-square"></i>
     </a>
-    <a href="https://www.linkedin.com/in/zaiyaan-esoof-72875b188">
+    <a aria-label="Link to Zaiyaan Esoof's linkedin account" href="https://www.linkedin.com/in/zaiyaan-esoof-72875b188">
       <i class="fa fa-linkedin"></i>
     </a>
-  </div><a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>
+  </div><a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>
 </div></div>

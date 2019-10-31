@@ -87,8 +87,8 @@ def createProfilecard(firstName,lastName,jobTitle,number,email,twitter,linkedin,
                 h1(name)
                 p(jobTitle,cls='title')
                 log.info(f"Creating Social icons card for {firstName} {lastName}")
-                createSocialIcons(number,email,twitter,linkedin,github)
-                raw("<a class='contact w3-hover-shadow' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy / Academie Du Numerique</a>")
+                createSocialIcons(name,number,email,twitter,linkedin,github)
+                raw("<a class='contact w3-hover-shadow' aria-label='Learn more about Digital Academy' href='https://www.csps-efpc.gc.ca/About_us/Business_lines/digitalacademy-eng.aspx' target='_blank'>Digital Academy</a>")
                 
 
                     
@@ -114,25 +114,35 @@ def findPersonImage(firstName,lastName,listOfPics):
 
 
 
-def createSocialIcons(number,email,twitter,linkedin,github):
+def createSocialIcons(name,number,email,twitter,linkedin,github):
     
     with div(cls="social-icons") as d:
         email='mailto:'+email
-
-        with a(href=email):
+        emailLink=a(href=email)
+        emailLink['aria-label']=f"Link to {name}'s Email"
+        with emailLink:
                  i(cls="fa fa-envelope")
+
         number='tel:'+number
-        with a(href=number):
+        phoneLink=a(href=number)
+        phoneLink['aria-label']=f"Link to {name}'s Phone Number"
+        with phoneLink:
                 i(cls="fa fa-phone-square")
 
-        if(twitter ):    
-                with a(href=twitter):
+        if(twitter):
+                twitterLink=a(href=twitter)
+                twitterLink['aria-label']=f"Link to {name}'s twitter account"   
+                with twitterLink:
                         i(cls="fa fa-twitter")
-        if(linkedin):         
-                with a(href=linkedin):
+        if(linkedin):
+                linkedinLink=a(href=linkedin)
+                linkedinLink['aria-label']=f"Link to {name}'s linkedin account"   
+                with linkedinLink:
                         i(cls="fa fa-linkedin")
-        if(github):         
-                with a(href=github):
+        if(github):
+                githubLink=a(href=github)
+                githubLink['aria-label']=f"Link to {name}'s github account"           
+                with githubLink:
                         i(cls="fa fa-github-square")
         
         return d      
@@ -141,9 +151,9 @@ def createMeetTheTeamPage(dataDetails='Corresponding details - Sheet1.csv',):
     with open('./meetTheTeamOutput.txt','w') as f:
         f.write('<div class="container">\n')
         for index, row in data.iterrows():
-                createInfoJson(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
+                createInfoJson(row[0].strip(),row[1],row[2],row[3],row[4],row[5],row[6],row[7])
                 log.info(f'Starting to create Profile cards:')
-                a=createProfilecard(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
+                a=createProfilecard(row[0].strip(),row[1],row[2],row[3],row[4],row[5],row[6],row[7])
                 f.write(str(a))
         f.write('</div>\n')
 
