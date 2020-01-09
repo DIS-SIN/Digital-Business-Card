@@ -4,3 +4,7 @@ python/botenv/
 python/.ipynb_checkpoints/
 python/__pycache__/
 python/env
+
+node_modules
+.next
+.DS_Store
