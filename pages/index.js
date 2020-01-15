@@ -16,11 +16,6 @@ Index.getInitialProps = async function() {
     const fieldsRes = await fetch("http://localhost:3000/api/getFields");
     const fieldsData = await fieldsRes.json();
 
-    // const fields = {};
-    // fieldsData.forEach(field => {
-    //     fields[field.label.toLowerCase()] = field.fieldID;
-    // });
-
 	console.log(`Show data fetched. Count: ${data.length}`);
 
 	return {
