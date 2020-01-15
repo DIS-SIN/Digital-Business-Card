@@ -1,27 +1,40 @@
 import fetch from 'isomorphic-unfetch';
-import { Card, Icon, Image } from 'semantic-ui-react'
+import Card from '../components/Card';
 
 const Index = (props) => (
-	<div>
-		<p>Hello Next.js</p>
+	<div style={styles.app}>
 		{props.businessCards.map(card => (
-		<React.Fragment>
-			<p>{card.name}</p>
-			<img src={card.avatar}/>
-		</React.Fragment>
+		<Card key={card["_id"]} card={card} fields={props.fields}/>
       ))}
 	</div>
 );
 
 Index.getInitialProps = async function() {
 	const res = await fetch('http://localhost:3000/api/getAllBusinessCards');
-	const data = await res.json();
+    const data = await res.json();
+    
+    const fieldsRes = await fetch("http://localhost:3000/api/getFields");
+    const fieldsData = await fieldsRes.json();
+
+    // const fields = {};
+    // fieldsData.forEach(field => {
+    //     fields[field.label.toLowerCase()] = field.fieldID;
+    // });
 
 	console.log(`Show data fetched. Count: ${data.length}`);
 
 	return {
-		businessCards: data
+        businessCards: data,
+        fields: fieldsData
 	};
+};
+
+const styles = {
+    app: {
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "space-evenly"
+    }
 };
   
 export default Index;

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/DIS-SIN/Digital-Business-Card#readme",
   "dependencies": {
+    "icomoon-react": "^2.0.16",
     "isomorphic-unfetch": "^3.0.0",
     "mongodb": "^3.4.1",
     "next": "^9.1.7",
