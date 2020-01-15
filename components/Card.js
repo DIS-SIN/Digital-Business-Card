@@ -57,7 +57,10 @@ const styles = {
     },
     socialIcons: {
         display: "flex",
-        justifyContent: "space-evenly"
+        justifyContent: "space-evenly",
+        flex: 1,
+        alignItems: "flex-end",
+        padding: 10
     }
 };
 
