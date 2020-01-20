@@ -19,7 +19,7 @@ export default (req, res) => {
 
         const db = client.db(dbName);
 
-        db.collection("people").find({}).limit(100).toArray(function(err, result) {
+        db.collection("people").find({ userDisabled: { $ne: true } }).limit(100).toArray(function(err, result) {
             if (err){
                 res.status(400).json({
                     message: err

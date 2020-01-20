@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import iconSet from "../icons/selection.json"
 import IcomoonReact, { iconList } from "icomoon-react";
 
@@ -21,8 +22,10 @@ const Card = (props) => {
 
     return (
         <div style={styles.card}>
-            <img style={styles.avatar} src={props.card.avatar}/>
-            <p>{props.card.name}</p>
+            <img style={styles.avatar} src={props.card.avatar} alt={`${props.card.name}'s avatar`}/>
+            <Link href="/card/[id]" as={`/card/${props.card.slackID}`}>
+                <p>{props.card.name}</p>
+            </Link>
             <p>{props.card.title}</p>
             <p>{props.card.fields.XfMG4K444A ? props.card.fields.XfMG4K444A.value : undefined}</p>
             <div style={styles.socialIcons}>
@@ -53,7 +56,8 @@ const styles = {
         margin: 5
     },
     avatar: {
-        maxWidth: 200
+        maxWidth: 200,
+        objectFit: "contain"
     },
     socialIcons: {
         display: "flex",

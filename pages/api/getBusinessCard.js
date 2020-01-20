@@ -2,6 +2,8 @@ const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 
 export default (req, res) => {
+
+    console.log("REQUEST: ", req);
     
     // Connection URL
     const url = `mongodb+srv://business_cards_nextjs:${encodeURI("Canada1!")}@da-business-cards-1on15.azure.mongodb.net/test?retryWrites=true&w=majority`;

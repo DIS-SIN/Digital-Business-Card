@@ -4,8 +4,8 @@ import Card from '../components/Card';
 const Index = (props) => (
 	<div style={styles.app}>
 		{props.businessCards.map(card => (
-		<Card key={card["_id"]} card={card} fields={props.fields}/>
-      ))}
+            <Card key={card["_id"]} card={card} fields={props.fields}/>
+        ))}
 	</div>
 );
 
