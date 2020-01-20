@@ -1,9 +1,11 @@
+import RichPreview from "../../components/RichPreview";
 import SocialChannels from "../../components/SocialChannels";
 
 export default function Card(props) {
 
   return (
     <div>
+        <RichPreview title={props.businessCard.name} description={props.businessCard.title} image={props.businessCard.avatar} url={`localhost:3000/card/${props.businessCard.slackID}`}/>
         <img src={props.businessCard.avatar} alt={`${props.businessCard.name}'s avatar`}/>
         <h1>{props.businessCard.name}</h1>
         <p>{props.businessCard.title}</p>
