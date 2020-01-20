@@ -1,24 +1,9 @@
 import Link from 'next/link';
-import iconSet from "../icons/selection.json"
-import IcomoonReact, { iconList } from "icomoon-react";
+import iconSet from "../icons/selection.json";
+import IcomoonReact from "icomoon-react";
+import SocialChannels from "./SocialChannels";
 
 const Card = (props) => {
-
-    function getSocialChannels() {
-        let socialChannels = [];
-        props.fields.forEach(field => {
-            if (props.card.fields[field.fieldID] && field.label != "Where I work"){
-                socialChannels.push({
-                    label: field.label,
-                    value: props.card.fields[field.fieldID].value,
-                    alt: props.card.fields[field.fieldID].alt,
-                    icon: field.label === "Blog/Website" ? "website" : field.label.toLowerCase(),
-                    fieldID: field.fieldID
-                });
-            }
-        });
-        return socialChannels;
-    }
 
     return (
         <div style={styles.card}>
@@ -37,11 +22,7 @@ const Card = (props) => {
                         <IcomoonReact iconSet={iconSet} color="#444" size={20} icon="phone"/>
                     </a>    
                 : undefined}
-                {getSocialChannels().map(channel => (
-                    <a key={channel.fieldID} href={channel.value} title={channel.alt ? channel.alt : channel.label} target="_blank">
-                        <IcomoonReact iconSet={iconSet} color="#444" size={20} icon={channel.icon}/>
-                    </a>
-                ))}
+                <SocialChannels fields={props.fields} card={props.card}/>
             </div>
         </div>
     )

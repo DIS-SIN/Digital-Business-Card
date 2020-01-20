@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import SocialChannels from "../../components/SocialChannels";
 
 export default function Card(props) {
 
@@ -8,6 +8,7 @@ export default function Card(props) {
         <h1>{props.businessCard.name}</h1>
         <p>{props.businessCard.title}</p>
         <p>{props.businessCard.fields.XfMG4K444A ? props.businessCard.fields.XfMG4K444A.value : undefined}</p>
+        <SocialChannels fields={props.fields} card={props.businessCard}/>
     </div>
   );
 }
@@ -23,8 +24,12 @@ Card.getInitialProps = async function({ query }) {
     });
     const data = await res.json();
 
+    const fieldsRes = await fetch("http://localhost:3000/api/getFields");
+    const fieldsData = await fieldsRes.json();
+
 	return {
         businessCard: data,
-        query
+        query,
+        fields: fieldsData
 	};
 };
