@@ -21,7 +21,6 @@ export function getVCard(card, fields) {
 
     let socials = "";
     fields.forEach(field => {
-        console.log(field);
         if (field.icon != "website"){
             socials += `\nX-SOCIALPROFILE;type=${field.label}:${field.value}`;
         }

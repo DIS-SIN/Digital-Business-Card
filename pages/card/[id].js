@@ -5,10 +5,6 @@ import {getSocialChannels, getVCard} from "../../components/helpers/helperFuncti
 
 export default function Card(props) {
 
-    console.log(getVCard(props.businessCard, getSocialChannels(props.fields, props.businessCard)));
-    // console.log(getSocialChannels(props.fields, props.businessCard));
-    // console.log(props.businessCard);
-
   return (
     <div>
         <RichPreview title={props.businessCard.name} description={props.businessCard.title} image={props.businessCard.avatar} url={`localhost:3000/card/${props.businessCard.slackID}`}/>
@@ -17,7 +13,7 @@ export default function Card(props) {
         <p>{props.businessCard.title}</p>
         <p>{props.businessCard.fields.XfMG4K444A ? props.businessCard.fields.XfMG4K444A.value : undefined}</p>
         <SocialChannels fields={props.fields} card={props.businessCard}/>
-        {typeof window == "object" ? <a href={window.URL.createObjectURL(new Blob([getVCard(props.businessCard, getSocialChannels(props.fields, props.businessCard))], {type: 'text/x-vcard'}))} download="contact.vcf">Download</a>
+        {typeof window == "object" ? <a href={window.URL.createObjectURL(new Blob([getVCard(props.businessCard, getSocialChannels(props.fields, props.businessCard))], {type: 'text/x-vcard'}))} download={`${props.businessCard.name}.vcf`}>Download</a>
         : undefined}
     </div>
   );
