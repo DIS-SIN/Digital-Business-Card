@@ -1,13 +1,30 @@
 import fetch from 'isomorphic-unfetch';
+import {useState, useEffect} from 'react';
 import Card from '../components/Card';
 
-const Index = (props) => (
-	<div style={styles.app}>
-		{props.businessCards.map(card => (
-            <Card key={card["_id"]} card={card} fields={props.fields}/>
-        ))}
-	</div>
-);
+const Index = (props) => {
+
+    const [viewMode, setViewMode] = useState("desktop");
+    
+    useEffect(() => {
+        if (process.browser){
+            console.log("Adding listener");
+            window.addEventListener('resize', checkMediaQueries);
+        }
+    },[]);
+
+    function checkMediaQueries() {
+        window.outerWidth > 600 ? setViewMode("desktop") : setViewMode("mobile");
+    }
+    
+    return (
+        <div style={styles.app}>
+            {props.businessCards.map(card => (
+                <Card key={card["_id"]} card={card} fields={props.fields} viewMode={viewMode}/>
+            ))}
+        </div>
+    )
+};
 
 Index.getInitialProps = async function() {
 	const res = await fetch('http://localhost:3000/api/getAllBusinessCards');

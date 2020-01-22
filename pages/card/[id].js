@@ -14,7 +14,7 @@ export default function Card(props) {
         <p>{props.businessCard.title}</p>
         <p>{props.businessCard.fields.XfMG4K444A ? props.businessCard.fields.XfMG4K444A.value : undefined}</p>
         <SocialChannels fields={props.fields} card={props.businessCard}/>
-        {typeof window == "object" ? <a href={window.URL.createObjectURL(new Blob([getVCard(props.businessCard, getSocialChannels(props.fields, props.businessCard))], {type: 'text/x-vcard'}))} download={`${props.businessCard.name}.vcf`}>Download</a>
+        {process.browser ? <a href={window.URL.createObjectURL(new Blob([getVCard(props.businessCard, getSocialChannels(props.fields, props.businessCard))], {type: 'text/x-vcard'}))} download={`${props.businessCard.name}.vcf`}>Save Contact</a>
         : undefined}
         <ReactQr text={`http://localhost:3000/card/${props.businessCard.slackID}`} size={200} dotScale={1}/>
     </div>

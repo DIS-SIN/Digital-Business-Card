@@ -6,7 +6,7 @@ import SocialChannels from "./SocialChannels";
 const Card = (props) => {
 
     return (
-        <div style={styles.card}>
+        <div style={props.viewMode === "desktop" ? styles.card : styles.mobileCard}>
             <img style={styles.avatar} src={props.card.avatar} alt={`${props.card.name}'s avatar`}/>
             <Link href="/card/[id]" as={`/card/${props.card.slackID}`}>
                 <p>{props.card.name}</p>
@@ -29,8 +29,15 @@ const Card = (props) => {
 };
 
 const styles = {
+    mobileCard: {
+        width: "75%",
+        display: "flex",
+        flexDirection: "column",
+        border: "solid black 2px",
+        margin: 5
+    },
     card: {
-        width: "15%",
+        width: 200,
         display: "flex",
         flexDirection: "column",
         border: "solid black 2px",
