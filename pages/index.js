@@ -1,13 +1,37 @@
 import fetch from 'isomorphic-unfetch';
+import InfiniteScroll from 'react-infinite-scroller';
 import Card from '../components/Card';
+import { useState } from 'react';
 
 const Index = (props) => {
+
+    const [businessCards, setBusinessCards] = useState(props.initialBusinessCards.cards);
+    const [hasMoreCards, setHasMoreCards] = useState(props.initialBusinessCards.hasMore);
+
+    async function loadMoreCards() {
+        const res = await fetch(`http://localhost:3000/api/getAllBusinessCards?skip=${businessCards.length}`);
+        const data = await res.json();
+
+        setHasMoreCards(data.hasMore);
+        setBusinessCards(businessCards.concat(data.cards));
+    }
+
+    const loader = <div className="loader">Loading ...</div>;
+
+    let cardComponents = [];
+    businessCards.map((card, i) => {
+        cardComponents.push(
+            <Card key={i} card={card} fields={props.fields}/>
+        );
+    });
     
     return (
         <div className="app">
-            {props.businessCards.map(card => (
-                <Card key={card["_id"]} card={card} fields={props.fields}/>
-            ))}
+            <InfiniteScroll pageStart={0} loadMore={loadMoreCards} hasMore={hasMoreCards} loader={loader}>
+                <div className="cardContainer">
+                    {cardComponents}
+                </div>
+            </InfiniteScroll>
             {styles()}
         </div>
     )
@@ -23,17 +47,25 @@ Index.getInitialProps = async function() {
 	console.log(`Show data fetched. Count: ${data.length}`);
 
 	return {
-        businessCards: data,
+        initialBusinessCards: data,
         fields: fieldsData
 	};
 };
 
 function styles() {
     return <style jsx>{`
-        .app {
+        .cardContainer {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+        }
+
+        .loader {
+            background-color: black;
+            color: white;
+            bottom: 10px;
+            padding: 20px;
+            text-align: center;
         }
     `}</style>
 }
