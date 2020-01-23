@@ -1,27 +1,14 @@
 import fetch from 'isomorphic-unfetch';
-import {useState, useEffect} from 'react';
 import Card from '../components/Card';
 
 const Index = (props) => {
-
-    const [viewMode, setViewMode] = useState("desktop");
-    
-    useEffect(() => {
-        if (process.browser){
-            console.log("Adding listener");
-            window.addEventListener('resize', checkMediaQueries);
-        }
-    },[]);
-
-    function checkMediaQueries() {
-        window.outerWidth > 600 ? setViewMode("desktop") : setViewMode("mobile");
-    }
     
     return (
-        <div style={styles.app}>
+        <div className="app">
             {props.businessCards.map(card => (
-                <Card key={card["_id"]} card={card} fields={props.fields} viewMode={viewMode}/>
+                <Card key={card["_id"]} card={card} fields={props.fields}/>
             ))}
+            {styles()}
         </div>
     )
 };
@@ -41,12 +28,14 @@ Index.getInitialProps = async function() {
 	};
 };
 
-const styles = {
-    app: {
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "space-evenly"
-    }
-};
+function styles() {
+    return <style jsx>{`
+        .app {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    `}</style>
+}
   
 export default Index;
