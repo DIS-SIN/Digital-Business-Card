@@ -2,6 +2,7 @@ import fetch from 'isomorphic-unfetch';
 import InfiniteScroll from 'react-infinite-scroller';
 import Card from '../components/Card';
 import { useState } from 'react';
+import css from 'styled-jsx/css'
 
 const Index = (props) => {
 
@@ -19,9 +20,9 @@ const Index = (props) => {
     const loader = <div className="loader">Loading ...</div>;
 
     let cardComponents = [];
-    businessCards.map((card, i) => {
+    businessCards.map(card => {
         cardComponents.push(
-            <Card key={i} card={card} fields={props.fields}/>
+            <Card key={card["_id"]} card={card} fields={props.fields}/>
         );
     });
     
@@ -32,7 +33,7 @@ const Index = (props) => {
                     {cardComponents}
                 </div>
             </InfiniteScroll>
-            {styles()}
+            <style jsx>{styles}</style>
         </div>
     )
 };
@@ -52,22 +53,19 @@ Index.getInitialProps = async function() {
 	};
 };
 
-function styles() {
-    return <style jsx>{`
-        .cardContainer {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
-
-        .loader {
-            background-color: black;
-            color: white;
-            bottom: 10px;
-            padding: 20px;
-            text-align: center;
-        }
-    `}</style>
+const styles = css`
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
+.loader {
+    background-color: black;
+    color: white;
+    bottom: 10px;
+    padding: 20px;
+    text-align: center;
+}`;
   
 export default Index;
