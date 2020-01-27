@@ -17,7 +17,7 @@ const Index = (props) => {
         setBusinessCards(businessCards.concat(data.cards));
     }
 
-    const loader = <div className="loader">Loading ...</div>;
+    const loader = <div className="loader" key="loader">Loading ...</div>;
 
     let cardComponents = [];
     businessCards.map(card => {
