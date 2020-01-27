@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-unfetch';
-import ReactQr from 'orion-qr';
+import QRCode from 'qrcode.react';
 import RichPreview from "../../components/RichPreview";
 import SocialChannels from "../../components/SocialChannels";
 import {getSocialChannels, getVCard} from "../../components/helpers/helperFunctions";
@@ -16,7 +16,7 @@ export default function Card(props) {
         <SocialChannels fields={props.fields} card={props.businessCard}/>
         {process.browser ? <a href={window.URL.createObjectURL(new Blob([getVCard(props.businessCard, getSocialChannels(props.fields, props.businessCard))], {type: 'text/x-vcard'}))} download={`${props.businessCard.name}.vcf`}>Save Contact</a>
         : undefined}
-        <ReactQr text={`http://localhost:3000/card/${props.businessCard.slackID}`} size={200} dotScale={1}/>
+        <QRCode value={`http://localhost:3000/card/${props.businessCard.slackID}`} />
     </div>
   );
 }
