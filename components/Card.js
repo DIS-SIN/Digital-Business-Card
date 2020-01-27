@@ -9,14 +9,16 @@ const Card = (props) => {
 
     return (
         <div className="card">
-            <img className="avatar" src={props.card.avatar} alt={`${props.card.name}'s avatar`}/>
-            <div className="cardContent">
-                <Link href="/card/[id]" as={`/card/${props.card.slackID}`}>
+            <Link href="/card/[id]" as={`/card/${props.card.slackID}`}>
+                <img className="avatar" src={props.card.avatar} alt={`${props.card.name}'s avatar`}/>
+            </Link>
+            <Link href="/card/[id]" as={`/card/${props.card.slackID}`}>
+                <div className="cardContent">
                     <p className="name cardText">{props.card.name}</p>
-                </Link>
-                <p className="title cardText">{props.card.title}</p>
-                <p className="location cardText">{props.card.fields.XfMG4K444A ? props.card.fields.XfMG4K444A.value : undefined}</p>
-            </div>
+                    <p className="title cardText">{props.card.title}</p>
+                    <p className="location cardText">{props.card.fields.XfMG4K444A ? props.card.fields.XfMG4K444A.value : undefined}</p>
+                </div>
+            </Link>
             <div className="socialIcons">
                 <a href={`mailto:${props.card.email}`} title={`Email ${props.card.email}`} target="_blank">
                     <IcomoonReact iconSet={iconSet} color={colours.CSPS.purple} size={20} icon="email"/>
