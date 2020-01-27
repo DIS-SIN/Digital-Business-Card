@@ -1,8 +1,10 @@
 import fetch from 'isomorphic-unfetch';
 import InfiniteScroll from 'react-infinite-scroller';
+import Header from '../components/Header';
 import Card from '../components/Card';
 import { useState } from 'react';
 import css from 'styled-jsx/css'
+import {colours} from '../components/helpers/styleVariables';
 
 const Index = (props) => {
 
@@ -17,7 +19,13 @@ const Index = (props) => {
         setBusinessCards(businessCards.concat(data.cards));
     }
 
-    const loader = <div className="loader" key="loader">Loading ...</div>;
+    const loader = <div style={{
+        backgroundColor: colours.CSPS.purple,
+        color: "white",
+        bottom: 10,
+        padding: 20,
+        textAlign: "center"
+    }} key="loader">Loading ...</div>;
 
     let cardComponents = [];
     businessCards.map(card => {
@@ -28,6 +36,7 @@ const Index = (props) => {
     
     return (
         <div className="app">
+            <Header/>
             <InfiniteScroll pageStart={0} loadMore={loadMoreCards} hasMore={hasMoreCards} loader={loader}>
                 <div className="cardContainer">
                     {cardComponents}
@@ -58,14 +67,11 @@ const styles = css`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: ${colours.CSPS.lightGrey};
+    border: solid ${colours.CSPS.purple} 5px;
+    box-sizing: border-box;
+    padding-top: 15px;
 }
-
-.loader {
-    background-color: black;
-    color: white;
-    bottom: 10px;
-    padding: 20px;
-    text-align: center;
-}`;
+`;
   
 export default Index;
