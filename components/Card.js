@@ -28,7 +28,7 @@ const Card = (props) => {
                         <IcomoonReact iconSet={iconSet} color={colours.CSPS.purple} size={20} icon="phone"/>
                     </a>    
                 : undefined}
-                <SocialChannels fields={props.fields} card={props.card}/>
+                <SocialChannels fields={props.fields} card={props.card} colour={colours.CSPS.purple}/>
             </div>
             <style jsx>{styles}</style>
         </div>
