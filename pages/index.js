@@ -13,7 +13,7 @@ const Index = (props) => {
     const [hasMoreCards, setHasMoreCards] = useState(props.initialBusinessCards.hasMore);
 
     async function loadMoreCards() {
-        const res = await fetch(`http://localhost:3000/api/getAllBusinessCards?skip=${businessCards.length}`);
+        const res = await fetch(`https://digital-business-cards.herokuapp.com/api/getAllBusinessCards?skip=${businessCards.length}`);
         const data = await res.json();
 
         setHasMoreCards(data.hasMore);
