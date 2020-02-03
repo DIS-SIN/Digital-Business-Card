@@ -7,7 +7,7 @@ export default function Card(props) {
 
 Card.getInitialProps = async function({ query }) {
 
-	const res = await fetch('http://localhost:3000/api/getBusinessCard', {
+	const res = await fetch('https://digital-business-cards.herokuapp.com/api/getBusinessCard', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -16,7 +16,7 @@ Card.getInitialProps = async function({ query }) {
     });
     const data = await res.json();
 
-    const fieldsRes = await fetch("http://localhost:3000/api/getFields");
+    const fieldsRes = await fetch("https://digital-business-cards.herokuapp.com/api/getFields");
     const fieldsData = await fieldsRes.json();
 
 	return {

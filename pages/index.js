@@ -49,10 +49,10 @@ const Index = (props) => {
 };
 
 Index.getInitialProps = async function() {
-	const res = await fetch('http://localhost:3000/api/getAllBusinessCards');
+	const res = await fetch('https://digital-business-cards.herokuapp.com/api/getAllBusinessCards');
     const data = await res.json();
     
-    const fieldsRes = await fetch("http://localhost:3000/api/getFields");
+    const fieldsRes = await fetch("https://digital-business-cards.herokuapp.com/api/getFields");
     const fieldsData = await fieldsRes.json();
 
 	console.log(`Show data fetched. Count: ${data.length}`);
