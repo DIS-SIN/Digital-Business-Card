@@ -37,7 +37,7 @@ const Index = (props) => {
     
     return (
         <div className="app">
-            <ChildLock password="beta" localStorage={true} customContent={<p>This site is currently under development. Only authorized users are allowed access.</p>} background={{image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"}}/>
+            <ChildLock password="beta" customContent={<p>This site is currently under development. Only authorized users are allowed access.</p>} background={{image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"}}/>
             <Header/>
             <InfiniteScroll pageStart={0} loadMore={loadMoreCards} hasMore={hasMoreCards} loader={loader}>
                 <div className={styles.cardContainer}>
