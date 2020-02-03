@@ -30,7 +30,7 @@ export default function CardDetails(props) {
             </div>
             {process.browser ? <a className={styles.text} href={window.URL.createObjectURL(new Blob([getVCard(props.businessCard, getSocialChannels(props.fields, props.businessCard))], {type: 'text/x-vcard'}))} download={`${props.businessCard.name}.vcf`}>Add to Contacts</a>
             : undefined}
-            <QRCode className={styles.qrCode} value={`http://localhost:3000/card/${props.businessCard.slackID}`} />
+            <QRCode className={styles.qrCode} value={`https://digital-business-cards.herokuapp.com/card/${props.businessCard.slackID}`} />
         </div>
     );
 }
