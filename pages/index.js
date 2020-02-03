@@ -1,9 +1,10 @@
 import fetch from 'isomorphic-unfetch';
+import ChildLock from 'react-child-lock';
 import InfiniteScroll from 'react-infinite-scroller';
 import Header from '../components/Header';
 import Card from '../components/Card';
 import { useState } from 'react';
-import css from 'styled-jsx/css'
+import styles from '../stylesheets/index.module.css';
 import {colours} from '../components/helpers/styleVariables';
 
 const Index = (props) => {
@@ -36,13 +37,13 @@ const Index = (props) => {
     
     return (
         <div className="app">
+            <ChildLock password="beta" localStorage={true} customContent={<p>This site is currently under development. Only authorized users are allowed access.</p>} background={{image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"}}/>
             <Header/>
             <InfiniteScroll pageStart={0} loadMore={loadMoreCards} hasMore={hasMoreCards} loader={loader}>
-                <div className="cardContainer">
+                <div className={styles.cardContainer}>
                     {cardComponents}
                 </div>
             </InfiniteScroll>
-            <style jsx>{styles}</style>
         </div>
     )
 };
@@ -61,17 +62,5 @@ Index.getInitialProps = async function() {
         fields: fieldsData
 	};
 };
-
-const styles = css`
-.cardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: ${colours.CSPS.lightGrey};
-    border: solid ${colours.CSPS.purple} 5px;
-    box-sizing: border-box;
-    padding-top: 15px;
-}
-`;
   
 export default Index;

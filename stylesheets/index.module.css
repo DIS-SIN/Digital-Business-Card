@@ -1,0 +1,11 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--csps-light-grey);
+    border: solid var(--csps-purple) 5px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+}

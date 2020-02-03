@@ -1,0 +1,25 @@
+.businessCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--csps-purple);
+    border: solid var(--csps-grey) 5px;
+    box-sizing: border-box;
+}
+
+.avatar {
+    width: 300px;
+}
+
+.text {
+    color: white;
+}
+
+.iconLabel {
+    display: flex;
+    align-items: center;
+}
+
+.iconLabel .text {
+    margin-left: 10px;
+}

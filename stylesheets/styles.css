@@ -1,0 +1,14 @@
+/* Global Styles */
+
+:root {
+    --csps-purple: rgb(63,42,86);
+    --csps-grey: rgb(78,91,115);
+    --csps-light-grey: #EDEFF1;
+    --csps-medium-grey: #E5E7EA;
+    --csps-coral: #DA797A;
+}
+
+body {
+    margin: 0;
+}
+

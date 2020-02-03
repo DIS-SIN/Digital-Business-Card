@@ -48,3 +48,8 @@ export function getVCard(card, fields) {
 
     return vCard;
 }
+
+export function multiClass() {
+    let classList = Array.prototype.slice.call(arguments);
+    return classList.join(" ");
+}

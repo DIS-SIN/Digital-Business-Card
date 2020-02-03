@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-unfetch';
 import QRCode from 'qrcode.react';
-import css from 'styled-jsx/css'
+import styles from './[id].module.css';
 import iconSet from "../../icons/selection.json";
 import IcomoonReact from "icomoon-react";
 import RichPreview from "../../components/RichPreview";
@@ -11,10 +11,10 @@ import {colours} from '../../components/helpers/styleVariables';
 export default function Card(props) {
 
   return (
-    <div className="businessCard">
+    <div className={styles.businessCard}>
         <RichPreview title={props.businessCard.name} description={props.businessCard.title} image={props.businessCard.avatar} url={`localhost:3000/card/${props.businessCard.slackID}`}/>
-        <img className="avatar" src={props.businessCard.avatar} alt={`${props.businessCard.name}'s avatar`}/>
-        <h1 className="text">{props.businessCard.name}</h1>
+        <img className={styles.avatar} src={props.businessCard.avatar} alt={`${props.businessCard.name}'s avatar`}/>
+        <h1 className={styles.text}>{props.businessCard.name}</h1>
         <p className="text">{props.businessCard.title}</p>
         <p className="text">{props.businessCard.fields.XfMG4K444A ? props.businessCard.fields.XfMG4K444A.value : undefined}</p>
         <a className="iconLabel" href={`mailto:${props.businessCard.email}`} title={`Email ${props.businessCard.email}`} target="_blank">
@@ -33,7 +33,7 @@ export default function Card(props) {
         {process.browser ? <a className="text" href={window.URL.createObjectURL(new Blob([getVCard(props.businessCard, getSocialChannels(props.fields, props.businessCard))], {type: 'text/x-vcard'}))} download={`${props.businessCard.name}.vcf`}>Add to Contacts</a>
         : undefined}
         <QRCode value={`http://localhost:3000/card/${props.businessCard.slackID}`} />
-        <style jsx>{styles}</style>
+        {/* <style jsx>{styles}</style> */}
     </div>
   );
 }
@@ -59,30 +59,30 @@ Card.getInitialProps = async function({ query }) {
 	};
 };
 
-const styles = css`
-.businessCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: ${colours.CSPS.purple};
-    border: solid ${colours.CSPS.grey} 5px;
-    box-sizing: border-box;
-}
+// const styles = css`
+// .businessCard {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     background-color: ${colours.CSPS.purple};
+//     border: solid ${colours.CSPS.grey} 5px;
+//     box-sizing: border-box;
+// }
 
-.avatar {
-    width: 300px;
-}
+// .avatar {
+//     width: 300px;
+// }
 
-.text {
-    color: white;
-}
+// .text {
+//     color: white;
+// }
 
-.iconLabel {
-    display: flex;
-    align-items: center;
-}
+// .iconLabel {
+//     display: flex;
+//     align-items: center;
+// }
 
-.iconLabel .text {
-    margin-left: 10px;
-}
-`;
+// .iconLabel .text {
+//     margin-left: 10px;
+// }
+// `;

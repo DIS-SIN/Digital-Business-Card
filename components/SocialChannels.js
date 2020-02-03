@@ -1,6 +1,5 @@
 import iconSet from "../icons/selection.json"
 import IcomoonReact from "icomoon-react";
-import {colours} from "./helpers/styleVariables"; 
 import {getSocialChannels} from "./helpers/helperFunctions"
 
 const SocialChannels = (props) => (
